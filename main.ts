@@ -1,8 +1,10 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program ...
+ * Created by: Michael Bruneau
+ * Created on: Nov 2023
+ * This program changes 
 */
 
-basic.showString('Hello, World!')
+// setup
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
