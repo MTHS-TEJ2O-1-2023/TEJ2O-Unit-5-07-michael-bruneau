@@ -6,7 +6,6 @@ This module is a Micro:bit MicroPython program
 
 from microbit import *
 from math import *
-from robotbit import *
 
 
 # SparkFun Electronics
@@ -45,4 +44,7 @@ display.show(Image.HAPPY)
 
 while True:
     if button_a.is_pressed():
-        robotbit.servo(S1, 0)
+        Servo(pin0).write_angle(0)
+        display.clear()
+        display.show(str("0"))
+        Image("99900:" "90900:" "99900:" "00000:" "00000")
