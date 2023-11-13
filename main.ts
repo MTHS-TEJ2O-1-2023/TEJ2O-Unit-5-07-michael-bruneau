@@ -7,20 +7,21 @@
 
 // variables
 const servoNumber1 = robotbit.Servos.S1
-const degreeSign: basic.showLeds(`
-  # # # . .
-  # . # . .
-  # # # . .
-  . . . . .
-  . . . . .
-`)
+
 
 // setup
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
   robotbit.Servo(servoNumber1, 0)
-  basic.showString(('0') + degreeSign)
+  basic.showString('0')
+  basic.showLeds(`
+# # # . .
+# . # . .
+# # # . .
+. . . . .
+. . . . .
+`)
   basic.pause(1000)
   basic.clearScreen()
   basic.showIcon(IconNames.Happy)
