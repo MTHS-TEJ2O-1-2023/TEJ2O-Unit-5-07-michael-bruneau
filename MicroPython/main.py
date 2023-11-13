@@ -5,6 +5,8 @@ This module is a Micro:bit MicroPython program
 """
 
 from microbit import *
+from math import *
+from robotbit import *
 
 
 # SparkFun Electronics
@@ -38,24 +40,9 @@ class Servo:
         self.write_us(us)
 
 
-Servo(pin0).write_angle(0)
+# setup
+display.show(Image.HAPPY)
+
 while True:
     if button_a.is_pressed():
-        for angle in range(0, 90, 5):
-            Servo(pin0).write_angle(angle)
-            sleep(200)
-    if button_b.is_pressed():
-        Servo(pin0).write_angle(0)
-        sleep(1000)
-        Servo(pin0).write_angle(90)
-        sleep(1000)
-        Servo(pin0).write_angle(0)
-        sleep(1000)
-    else:
-        Servo(pin0).write_angle(180)
-
-    # variables
-
-    # setup
-    display.show(Image.HAPPY)
-    Servo(pin1).write_angle(0)
+        robotbit.servo(S1, 0)
