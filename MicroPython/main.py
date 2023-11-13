@@ -42,8 +42,10 @@ class Servo:
 # setup
 display.show(Image.HAPPY)
 
+# loop
 while True:
     if button_a.is_pressed():
+        # turn servo 0 deegres
         Servo(pin0).write_angle(0)
         display.clear()
         display.show("0")
@@ -51,10 +53,13 @@ while True:
         deegreSign = Image("99900:" "90900:" "99900:" "00000:" "00000")
         display.show(deegreSign)
 
-    if button_a.is_pressed():
+    if button_b.is_pressed():
+        # turn servo 180 deegres
         Servo(pin0).write_angle(180)
         display.clear()
         display.show("180")
         sleep(500)
         deegreSign = Image("99900:" "90900:" "99900:" "00000:" "00000")
         display.show(deegreSign)
+    display.clear()
+    display.show(Image.HAPPY)
