@@ -47,5 +47,6 @@ while True:
         Servo(pin0).write_angle(0)
         display.clear()
         display.show("0")
+        sleep(500)
         deegreSign = Image("99900:" "90900:" "99900:" "00000:" "00000")
         display.show(deegreSign)
