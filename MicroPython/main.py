@@ -50,3 +50,11 @@ while True:
         sleep(500)
         deegreSign = Image("99900:" "90900:" "99900:" "00000:" "00000")
         display.show(deegreSign)
+
+    if button_a.is_pressed():
+        Servo(pin0).write_angle(180)
+        display.clear()
+        display.show("180")
+        sleep(500)
+        deegreSign = Image("99900:" "90900:" "99900:" "00000:" "00000")
+        display.show(deegreSign)
