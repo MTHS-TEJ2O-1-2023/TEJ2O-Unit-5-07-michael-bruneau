@@ -46,5 +46,6 @@ while True:
     if button_a.is_pressed():
         Servo(pin0).write_angle(0)
         display.clear()
-        display.show(str("0"))
-        Image("99900:" "90900:" "99900:" "00000:" "00000")
+        display.show("0")
+        deegreSign = Image("99900:" "90900:" "99900:" "00000:" "00000")
+        display.show(deegreSign)
