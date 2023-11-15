@@ -12,7 +12,6 @@ const servoNumber1 = robotbit.Servos.S1
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-
   // turn servo 0 deegres
   robotbit.Servo(servoNumber1, 0)
   basic.clearScreen()
@@ -30,7 +29,6 @@ input.onButtonPressed(Button.A, function () {
 })
 
 input.onButtonPressed(Button.B, function () {
-
   // turn servo 180 deegres
   robotbit.Servo(servoNumber1, 180)
   basic.clearScreen()
