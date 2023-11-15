@@ -2,12 +2,11 @@
  *
  * Created by: Michael Bruneau
  * Created on: Nov 2023
- * This program changes 
+ * This program changes
 */
 
 // variables
 const servoNumber1 = robotbit.Servos.S1
-
 
 // setup
 basic.showIcon(IconNames.Happy)
